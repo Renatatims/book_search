@@ -44,11 +44,11 @@ const LoginForm = () => {
     }
 
     try {
-      const { info } = await login({
+      const { data } = await login({
         variables: { ...userFormData },
       });
 
-      console.log(info);
+      console.log(data);
 
     /*try {
       const response = await loginUser(userFormData);
@@ -62,7 +62,7 @@ const LoginForm = () => {
 
       console.log(user);*/
 
-      Auth.login(info.login.token);
+      Auth.login(data.login.token);
     } catch (err) {
       console.error(err);
       //setShowAlert(true);

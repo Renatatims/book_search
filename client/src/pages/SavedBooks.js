@@ -14,9 +14,9 @@ import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 
 const SavedBooks = () => {
-  const { loading, info } = useQuery(QUERY_ME);
+  const { loading, data } = useQuery(QUERY_ME);
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
-  const userData = info?.me || {};
+  const userData = data?.me || {};
   
   /* Removed the Use Effect Hook
   const [userData, setUserData] = useState({});
@@ -60,7 +60,7 @@ const SavedBooks = () => {
     }
 
     try {
-      const { info } = await removeBook({
+      const { data } = await removeBook({
         variables: { bookId },
       });
       
