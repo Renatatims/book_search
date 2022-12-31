@@ -32,19 +32,19 @@ const resolvers = {
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError("Incorrect password");
+        throw new AuthenticationError("Incorrect credentials");
       }
 
       const token = signToken(user);
       return { token, user };
     },
     // Save a book
-    saveBook: async (parent, { bookInput }, context) => {
+    saveBook: async (parent, { bookData }, context) => {
       if (context.user) {
-        const updatedUser = await User.findOneAndUpdate(
+        const updatedUser = await User.findByIdAndUpdate(
           { _id: context.user._id },
-          { $addToSet: { savedBooks: bookInput } },
-          { new: true, runValidators: true }
+          { $push: { savedBooks: bookData } },
+          { new: true}
         );
         return updatedUser;
       }
