@@ -1,5 +1,6 @@
 # book_search
 Code refactor - GraphQL built with Apollo Server
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
@@ -43,6 +44,7 @@ Code refactor - GraphQL built with Apollo Server
 
   ## Tests
   To run the application:
+  
   ````npm run develop ````
 
   ## Questions
