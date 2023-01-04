@@ -4,6 +4,8 @@ Code refactor - GraphQL built with Apollo Server
 
   ## Description
   This project consists of a code refactor. The application is a Google Books API search engine that was built with RESTfull API and it was refactored to use GraphQL API built with Apollo Server.
+ 
+ ![Preview](assets/screenshots/Capture1.PNG)
 
   ## Table of Contents
   - [Installation](#installation)
@@ -26,7 +28,9 @@ Code refactor - GraphQL built with Apollo Server
   Book search engine enables the user to search for books and save them on their own page. Once a book is searched, the user can see the book's title, author, description, image and a link to that book on the Google Books site.
 
   ## Features
-  Books can be saved and deleted from the user's account. User need's to sign up in order to save books.
+  Books can be saved and deleted from the user's account. User needs to sign up in order to save the books.
+
+  ![Preview](assets/screenshots/Capture2.PNG)
 
   ## License
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
