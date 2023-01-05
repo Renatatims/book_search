@@ -8,6 +8,10 @@ Code refactor - GraphQL built with Apollo Server
  
  ![Preview](assets/screenshots/Capture1.PNG)
 
+  ## Link to application
+
+  https://renata-book-search.herokuapp.com/
+
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
